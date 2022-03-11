@@ -1,0 +1,164 @@
++Import React and ReactDOM
++Import test1.css
+import React from "react";
+import ReactDOM from "react-dom";
+import "./test1.css";
+
++ We import image source into this application 
+import ferrari from "./image/car/ferrari_laFerrari_Aperta.jpg";
+import pagani from "./image/car/pagani_huayra_bc_roadster_3.jpg";
+import lamborghini from "./image/car/lamborghini_aventador2.jpg";
+
+
+Notice that each source info must begin with ./  and image must be place inside the src folder that contains index.js
+React can not read file placed outside this src folder
+
+ferrari, pagani, Lamborghini is like variable that used to call later
+
+
+ <div id="block1_1">
+                    <img src={ferrari}
+                    alt="Ferrari"
+                    width="350px" height="350px"/>
+
+                    <p>This is model: {model}, brand: {brand}.<br/> Type: {type}. Price: {price}. </p> <br/>
+                    
+                    
+                    
+        In these line of codes, you called the ferrari variable inside {} symbol of src attribute
+At the end of each single tag which is tag that just has the opening tag without the ending tag, you must place /> symbol to end this tag
+            
+ Ex: <img/> ,  <br/>  
+
+
++ We declare classes, object, array, function to store car information and use these information to display later.
+
++car3_obj is an object that combine car_obj and car2_obj and this object is created by using spread operator
+
+
+
+var car3_obj = {...car_obj,...car2_obj};
+
++car4_obj is used to work with object.call() or object.apply() later
+
+
+
+var car4_obj = {
+    model:"Lamborghini-45475675",
+    brand:"Lamborghini",
+    car_info_obj:{
+        car_info_model:"Lamborghini-45475675",
+        type:"Luxury",
+        price:"$5,125,000"
+    }
+}
+
+
+
++ car_info array is used to display the introduction of this page and output something into the console
+
+
+
+var car_info = ["Ferrari","Pagani","Lamborghini"];
+var [car1,car2,car3] = car_info;
+
+console.log(car1);
+console.log(car2);
+console.log(car3);
+
+
+   <div id="block0">
+
+           <h4>Total car information: {car_info.map((item)=><p>{item}</p>)}</h4>
+        </div>
+        
+        
+        
+ + Notice that I specified destructuring object syntax as parameter inside function car3_obj_intro that represents each property of two objects as car_obj and car2_obj.
+ 
+function car3_obj_intro({model,brand,car_info_obj:{type,price},
+model2,brand2,car_info_obj2:{type2,price2}}){
+ 
+Inside this function, I specified syntax for html that placed inside <body> tag. These syntax must be placed inside return().
+Warning: You can not create any syntax for <head> tag or inside <head> tag
+
+
+
+return ( 
+ 
+   
+
+    <div id="block">
+
+        <div id="block0">
+
+           <h4>Total car information: {car_info.map((item)=><p>{item}</p>)}</h4>
+        </div>
+
+       <div id="block1">
+
+                <div id="block1_1">
+                    <img src={ferrari}
+                    alt="Ferrari"
+                    width="350px" height="350px"/>
+
+                    <p>This is model: {model}, brand: {brand}.<br/> Type: {type}. Price: {price}. </p> <br/>
+
+                </div>
+      
+       
+                    <div id="block1_2">
+                        <img src={pagani}
+                            alt="Pagani"
+                            width="350px" height="350px"/>
+
+                            <p>This is model: {model2}, brand: {brand2}. <br/> Type: {type2}. Price: {price2}</p>
+                    </div>
+
+
+
+                <div id="block1_3">
+                    <img src={lamborghini}
+                        alt="Pagani"
+                        width="350px" height="350px"/>
+
+                        <p>{call1_car_info_class.intro1.apply(car4_obj,[type,price])}</p>
+                </div>
+      
+        </div>
+
+
+    </div>
+
+
+ );
+    
+    
+    
++Finally, I display everything on website
+
+
+
+ReactDOM.render(car3_obj_intro(car3_obj),document.getElementById("root"));
+
+
+
+
++ I use Css to style element on this website
++React just work with external css input, not internal or inline input
+
+
+[id="block0"]{
+    text-align:center;
+}
+
+[id="block1"]{
+    display:grid;
+    grid-template-columns:400px 400px 400px;
+}
+
+
+[id="block1_1"] p, [id="block1_2"] p, [id="block1_3"] p{
+    font-size:35px;
+    
+}
