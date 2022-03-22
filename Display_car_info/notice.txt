@@ -145,7 +145,7 @@ ReactDOM.render(car3_obj_intro(car3_obj),document.getElementById("root"));
 
 
 + I use Css to style element on this website
-+React just work with external css input, not internal or inline input
+
 
 
 [id="block0"]{
