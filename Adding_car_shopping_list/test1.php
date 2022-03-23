@@ -123,12 +123,23 @@
                   >
                         
                   </table>
+
+                  <div ng-repeat="item in car_storage" 
+                  style="position:relative;top:0;border:5px solid green;margin-bottom:20px;padding:10px;">
+                         {{item}}
+                                          <button id="remove_button" title="remove_button" name="remove_button"
+                                          type="button" data-remove-button="remove button data" 
+                                          class="remove_button btn w3-transparent
+                                          w3-hover-red w3-hover-text-white" ng-click="remove_car_added_func($index)"
+                                          style="position:absolute;top:0;right:0;bottom:0;color:red;
+                                          font-size:30px">&times;</button>
+                  </div>
                   
         </div>
    
 
         <span id="car_item_storage_error_message" 
-        class="text-danger"></span>
+        class="text-danger">{{car_adding_item_error_message}}</span>
 
 
 
@@ -138,7 +149,7 @@
                  id="add_item_butt" title="add_item button" name="add_item_button"
                 type="button"  data-add_item-butt="shopping item add_item button data"
                 
-                
+                ng-click="adding_car_item_func()"
                 style="position:absolute;right:0;top:0;bottom:0;font-size:25px;padding:10px 20px;"
                 ><i class="fa fa-plus"></i> ADD</button>
       </div>
@@ -225,44 +236,7 @@ jq(document).ready(function($){
        $("#car_order_after_being_added_table_list").width(400)
       
     
-
-       var car_storage = [];
-         
-       var car_storage_txt = "";
-
-      
-
-           
-    
-                            
-              $("[id='add_item_butt']").click(function(){
-                      if(car_storage.indexOf($("[id='add_item_field']").val()) == -1){
-                          car_storage.push($("[id='add_item_field']").val());
-
-                                     for(let i = 0; i< car_storage.length;i++){
-                                          car_storage_txt += `
-                                          <tr class="car_added_row">
-                                          <td style='border:5px solid green;text-align:center;position:relative;top:0'>
-                                          ${car_storage[i]} 
-                                          <button id="remove_button" title="remove_button" name="remove_button"
-                                          type="button" data-remove-button="remove button data" 
-                                          class="remove_button btn w3-transparent
-                                          w3-hover-red w3-hover-text-white" onclick="remove_car_added_func()"
-                                          style="position:absolute;top:0;right:0;bottom:0;color:red;font-size:20px">&times;</button>
-                                          </td>
-                                          </tr>
-
-                                          `;
-                                   $("[id='car_order_after_being_added_table_list']").html(car_storage_txt);
-                                   }
-                          
-                        }else{
-                             $("#car_item_storage_error_message").html("Sorry, this car already exists in your list!!!");
-                        }    
-                  
-              });
-            
-
+   
 
 });
 
@@ -357,6 +331,18 @@ shopping_app.controller("form1_app_controller",function($scope,$http){
                      console.log(response.statusText);
               }
        );
+       $scope.car_storage = [];
+       $scope.car_adding_item_error_message = "";
+       $scope.adding_car_item_func = function(){
+              if($scope.car_storage.indexOf(document.getElementById("add_item_field").value) == -1){
+                     $scope.car_storage.push(document.getElementById("add_item_field").value);
+              }else{
+                     $scope.car_adding_item_error_message = "Sorry, your car already exists in this list!!!";
+              }
+       }
+       $scope.remove_car_added_func = function(z){
+              $scope.car_storage.splice(z,1);
+       }
        
 
 });
