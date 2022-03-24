@@ -1,0 +1,8 @@
+I have a small project that pass data between test1.js and index.js file to get car model, brand, and info data
+I have 3 function components as Car1, Car2, and Mclaren_collection
+
+I use named import and export method to import and export data between these two files
+
++Notice that I put car1_obj and car2_obj inside Mclaren_collection in order to make it easier to call each property of this object inside this function component.
+If i place them inside Car1 and Car2 function component, then I can not call them by calling a normal function like the way javascript do
+ex: if I call <td>{Car1()}</td> or <td>{Car1({color:'yellow'})}</td> or <td>{Car1({color:'yellow'}).car1_obj.model}</td>, they all generate error.
