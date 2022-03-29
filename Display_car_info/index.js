@@ -128,3 +128,6 @@ model2,brand2,car_info_obj2:{type2,price2}}){
 // 
 
 ReactDOM.render(car3_obj_intro(car3_obj),document.getElementById("root"));
+
+
+//This is for testing
