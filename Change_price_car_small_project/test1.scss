@@ -1,3 +1,17 @@
+@use "test2" as tst2;
+
+body{
+    background-color:black;
+}
+
+[id="table1"] {
+    background-color:white;
+    width:1000px;
+    td{
+        @include tst2.brd-brd1;
+    }
+}
+
 [id="intro1"]{
     @include tst2.qwe-ftzs;
     @include tst2.sdf-txt_color;
