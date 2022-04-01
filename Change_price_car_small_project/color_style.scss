@@ -1,0 +1,29 @@
+$clr1:rgb(9, 172, 9);
+$clr2:blue;
+$clr3:rgb(49, 49, 224);
+$clr4:red;
+$clr5:rgb(231, 77, 77);
+$clr6:rgb(153, 233, 24);
+$clr7:rgb(31, 223, 175);
+$clr8:rgb(255, 0, 242);
+$clr9:rgb(240, 25, 125);
+$clr10:rgb(129, 23, 228);
+$clr11:rgb(43, 255, 0);
+$clr12:rgb(137, 145, 135);
+$clr13:rgb(2, 2, 2);
+$clr14:rgb(253, 255, 253);
+$clr15_trsprt:rgba(253, 255, 253, 0);
+$clr16:rgba(10, 10, 10, 0.459);
+$clr17:rgb(228, 243, 14);
+$clr18:rgb(240, 163, 20);
+
+
+@mixin txt_color{
+    color:$clr10;
+}
+@mixin txt_color2{
+    color:$clr7;
+}
+@mixin bg_color{
+    background-color:$clr13;
+}
