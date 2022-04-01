@@ -1,11 +1,8 @@
 @use "test2" as tst2;
 
-body{
-    background-color:black;
-}
+
 
 [id="table1"] {
-    background-color:white;
     width:1000px;
     td{
         @include tst2.brd-brd1;
