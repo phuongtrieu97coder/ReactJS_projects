@@ -1,0 +1,15 @@
+[id="intro1"]{
+    @include tst2.qwe-ftzs;
+    @include tst2.sdf-txt_color;
+    text-shadow:8px 8px 6px rgb(139, 121, 241);
+    font-weight:800;
+}
+
+[id="car_model_name_intro"]{
+    text-align:center;
+    @include tst2.qwe-ftzs;
+    color:rgb(51, 231, 99);
+    text-shadow:8px 8px 6px rgb(167, 252, 184);
+    font-weight:800;
+}
+
