@@ -1,7 +1,6 @@
 import React from "react";
 import ReactDOM from "react-dom";
 import "./test1.scss";
-import "./test1.js";
 
 
 function Func0(props){

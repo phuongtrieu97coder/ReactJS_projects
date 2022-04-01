@@ -1,0 +1,248 @@
+In this project, I use ReactJS, Sass, Javascript, Bootstrap, W3CSS, HTML, CSS to make a table
+contains intro information, car model name information, car image, introduction about 
+car information, introduction about total price information, a button to change car image,
+and a button to change car price
+
+If user click change car image, a new car image will appear replace an old car image
+If user click change price, the total price information will be changed to a new price
+
+This project is used to practice:
++@use,@forward,@mixin,@include,$specific_variable  from Sass
++Connect normal function,class,varible,object from javaScript to ReactJS Component
++ function component that has props
++ function component will array.map() method with specific key that return value like a loop
++ class and child class of javaScript that can form an object to call each property and method inside
++ class component that contains: 
+  *constructor()
+  *super()
+  *this.state 
+  *props
+  *this.setState() method
+  * static getDerivedStateFromProps(props,state) method
+  *special methods that can be called and return content for specific html element 
+  *main content for html file 
+
+
+***********---------------Explain Syntax----------------***************
+
+
+function Func0(props){
+    return <b id="intro1">{props.intro} <br/></b>
+}
+function Func1(){
+    var intro_arr = [
+        {id:1,intro:"Welcome to this webpage"},
+        {id:2,intro:"This is project1"},
+        {id:3,intro:"Content is about Car"}
+    ];
+    return <div>{intro_arr.map(val=><Func0 key={val.id} intro={val.intro}/>)}</div>
+}
+
+I made these function block as Function component to return introduction information through
+a <div> element. I practice writing function with "props" and connect value from "intro_arr" array
+to it using array.map() method
+
+
+
+---------------------------------------------------------------------------------------
+
+
+class Car_content1 {
+    constructor(model,brand){
+        this.model = model;
+        this.brand = brand;
+    }
+
+}
+class Car_content1_child1 extends Car_content1{
+    constructor(model,brand,price,car_img1){
+        super(model,brand);
+        this.price = price;
+        this.car_img1 = car_img1;
+    }
+    method1(){
+        return <Func1/>
+    }
+    method2(){
+        return `
+        This is model: ${this.model}, brand: ${this.brand}.
+        `;
+    }
+}
+
+var Car_content1_child1_obj = 
+new Car_content1_child1("Pagani-3366","Pagani","$15,489,367",
+"https://images.hgmsites.net/med/pagani-huayra-lultimo--image-via-
+prestige-imports-miami_100664363_m.jpg");
+
+
+At first, I want to practice create class and child class to make an object and I wanted to use it 
+to call later inside a class component that is used to return main content for this page 
+
+In addition, I also want to attach this.state=Car_content1_child1_obj so that I can call and work 
+with each property and method. Unfortunately, after attached them, I couldn't call
+ method1() and method2() inside ReactJS Component by writing  
+ {this.state.method1} or {this.state.method1()}
+
+ As a result, I had to call {Car_content1_child1_obj.method1()} or {Car_content1_child1_obj.method2()}
+ if I want to return : <Func1/>  or This is model: ${this.model}, brand: ${this.brand}.
+
+
+
+
+
+ --------------------------------------------------------------------------------------
+
+
+ class Car_info extends React.Component{
+    constructor(props){
+        super(props);
+        this.state = Car_content1_child1_obj;
+    }
+    Change_car_image = () =>{
+        this.setState({car_img1:"https://robbreport.com/wp-content/uploads/2021/08/2010_Pagani_Zonda_R_Evolution10.jpg?w=1000"})
+    }
+    Change_price = () => {
+        this.setState({price:"$20,369,258"})
+    }
+    static getDerivedStateFromProps(props,state){
+        return {model:props.model}
+    }
+    Car_info_method1 = () =>{
+        return  <>{Car_content1_child1_obj.method2()}</>;
+    }
+
+
+*
+ constructor(props){
+        super(props);
+        this.state = Car_content1_child1_obj;
+    }
+*
+
+This constructor method is used to declare "props", and "this.state"
+
+
+*
+Change_car_image = () =>{
+        this.setState({car_img1:"https://robbreport.com/wp-content/uploads/2021/08/2010_Pagani_Zonda_R_Evolution10.jpg?w=1000"})
+    }
+*
+This method is used to call later to change car image.
+ I wanted to call it inside a onClick event of a Change Car Image button
+ Because this method is inside a class Component, I had to call it onClick={this.Change_car_image}
+
+I used this.setState() method to change property value of this.state.
+Because this.state = Car_content1_child1_obj, the "car_img1" property value will be changed just 
+inside this class Component, not on the main object that be made from a class using javaScript 
+
+*
+  Change_price = () => {
+        this.setState({price:"$20,369,258"})
+    }
+*
+
+This method is used to call later to change car price.
+ I wanted to call it inside a onClick event of a Change Price button
+Because this method is inside a class Component, I had to call it onClick={this.Change_price}
+ 
+I used this.setState() method to change property value of this.state.
+Because this.state = Car_content1_child1_obj, the "price" property value will be changed just 
+inside this class Component, not on the main object that be made from a class using javaScript 
+
+
+
+
+*
+ static getDerivedStateFromProps(props,state){
+        return {model:props.model}
+    }
+
+*
+I used this method to make the "model" property value of this.state = props.model 
+Actually since I provided this.state = Car_content1_child1_obj, 
+I can not use static getDerivedStateFromProps()
+
+If I planed to practice this method, I would be using this.state = {model:"Pagani-456757"} like a 
+normal object instead
+
+*ReactDOM.render(<Car_info model="Pagani-14456588"/>,document.getElementById("block1"));*
+You can see I specified this syntax at the bottom of index.js file.
+
+Inside it I called <Car_info model="Pagani-14456588"/>.
+=> if static getDerivedStateFromProps(props,state) worked effectively, we would see the message 
+"This is model: Pagani-14456588, brand: Pagani."
+on the website instead of "This is model: Pagani-3366, brand: Pagani."
+
+
+-----------------------------------------------------------------------------
+
+
+Syntax below and syntax of test1.scss, test2.scss, border_style.scss, color_style.scss, 
+and fontsize_style.scss files are easy to understand, so I'm not going to Explain
+
+
+ render(){
+        return(
+            <div>
+              
+
+
+
+                <table id="table1">
+                   <tbody>
+                    <tr>
+                        <td id="table1_intro">
+                        {Car_content1_child1_obj.method1()}<br/>
+
+                        <h1 id="car_model_name_intro">{Car_content1_child1_obj.model}</h1>
+                        </td>
+
+
+                        <td>
+                            
+                <img src={this.state.car_img1}
+                alt="car_img1" width="100%" height="300px"/> <br/>
+                        </td>
+
+
+                    </tr>
+                    <tr>
+                        <td style={{padding:"10px 20px"}}>
+                        <this.Car_info_method1/><br/>
+
+<b>Total price: {this.state.price}</b>
+                        </td>
+
+                        <td style={{padding:"10px 20px"}}>
+
+                        <button id="butt1" className="butt1 w3-btn w3-ripple w3-green 
+                w3-hover-aqua w3-text-white w3-hover-text-white" title="change car-image button"
+                name="change_car_image_button" type="button" 
+                data-change-car-image-butt="change car-image button data"
+                onClick={this.Change_car_image}>Change Car Image</button>
+
+
+
+                        <button id="butt2" className="butt2 w3-btn w3-ripple w3-orange 
+                w3-hover-aqua w3-text-white w3-hover-text-white" title="change price button"
+                name="change_price_button" type="button" 
+                data-change-price-butt="change price button data" style={{float:"right"}}
+                onClick={this.Change_price}>Change Price</button>
+                        </td>
+                    </tr>
+                    </tbody>
+                </table>
+             
+
+
+             
+
+
+
+            </div>
+        )
+    }
+}
+
+ReactDOM.render(<Car_info model="Pagani-14456588"/>,document.getElementById("block1"));
