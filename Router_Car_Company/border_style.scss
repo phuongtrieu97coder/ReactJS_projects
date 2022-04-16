@@ -1,0 +1,26 @@
+$slt1:4px solid black;
+$slt2:4px double black;
+$slt3:4px solid blue;
+$slt4:4px double blue;
+$slt5:4px solid green;
+$slt6:4px double green;
+$slt7:4px solid yellowgreen;
+$slt8:4px double yellowgreen;
+$slt9:4px solid purple;
+$slt10:4px double purple;
+$slt11:4px solid orange;
+$slt12:4px double orange;
+$slt13:4px solid red;
+$slt14:4px double red;
+$slt15:4px solid rgb(166, 245, 21);
+$slt16:4px double rgb(166, 245, 21);
+$slt17:4px solid rgb(0, 238, 255);
+$slt18:4px double rgb(0, 238, 255);
+
+
+@mixin brd1{
+    border:$slt15;
+}
+@mixin brd2{
+    border:$slt12;
+}

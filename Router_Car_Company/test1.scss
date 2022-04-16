@@ -1,0 +1,32 @@
+@use "test2" as tst2;
+
+
+[id="register_block"]{
+    [id="register_block_content"]{
+        [id="register_form"]{
+            width:100%;
+            @include tst2.brd-brd1;
+            @include tst2.qwe-ftzs;
+            padding:20px;
+        }
+    }
+}
+
+[id="Page1_article_content_block"]{
+    display:grid;
+    grid-template-columns:700px 700px;
+
+}
+
+
+[id="Page2_article_block1"]{
+    display:grid;
+    grid-template-columns:450px 450px 450px;
+
+    section{
+        margin:10px;
+        img{
+            margin-bottom:20px;
+        }
+    }
+}

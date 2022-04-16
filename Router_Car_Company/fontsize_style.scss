@@ -1,0 +1,17 @@
+@function fontsize_func($para1){
+    @if $para1 == 15px{
+        @return $para1+3px;
+    }@else if $para1 == 20px{
+        @return $para1 +5px;
+    }@else if $para1 == 30px{
+        @return $para1 + 5px;
+    }@else if $para1 == 10px{
+        @return $para1 + 15px;
+    }@else{
+        @return $para1;
+    }
+}
+@mixin ftzs{
+    
+    font-size:fontsize_func(30px);
+}
