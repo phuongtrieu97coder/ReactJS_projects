@@ -14,7 +14,11 @@ import Carimg6 from "./image/car/pagani_zonda2.jpg";
 import Cartheme1 from "./image/car/car_wallpaper2.jpg";
 import Cartheme2 from "./image/car/car_wallpaper3.jpg";
 
+/*
+In this project, I practice to write useContext, useEffect, BrowserRouter, Routes, Route, Outlet,Link
+useMemo, memo
 
+*/
 var carinfo = {
     car1:Carimg1,
     car2:Carimg2,
