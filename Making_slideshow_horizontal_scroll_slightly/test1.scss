@@ -1,0 +1,13 @@
+
+.Table1{
+    border:5px double yellowgreen;
+    background-color:white;
+    overflow-x:hidden;
+    .ImportantData,.NormalData{
+        border:1px solid green;
+        position:relative;top:0;
+    }
+    .ImportantData{
+        background-color:rgba(127, 255, 212, 0.297);
+    }
+}
