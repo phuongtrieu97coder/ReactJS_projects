@@ -11,7 +11,7 @@
 - Index.js is placed in “my-app/src/”
 > Link: <a type="button">[index.js](./src/index.js)</a>
 
-https://img.shields.io/badge/js-index.js-yellow
+<img src='https://img.shields.io/badge/js-index.js-yellow' width="100px" height="100px">
 
 
 <br>
