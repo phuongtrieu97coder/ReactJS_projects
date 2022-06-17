@@ -1,3 +1,5 @@
+#Purpose:
+
 + This project is used to connect react with nodejs and mongoDB database to register user information, store data to database, and display it for users
 
 
@@ -19,7 +21,7 @@
 
 ![image](https://user-images.githubusercontent.com/82598726/174354953-94cf8073-5867-4c25-bebb-c508c4911d3c.png)
 
-
+<br><br><br>
 
 <p style="color:green;text-align:center;">
 
@@ -43,7 +45,7 @@ and the server providing that resource.[1]</h1>
 
 </p>
 
-
+<br><br><br>
 
 + We must create 2 terminal to run both reactjs(cd my-app => npm start) and nodejs(cd my-app => cd-public => node nodejs_test1.js) 
 to work effectively with this program.
@@ -52,6 +54,9 @@ to work effectively with this program.
 ![image](https://user-images.githubusercontent.com/82598726/174353447-acf54cf6-e165-4114-8150-25cfb8602eda.png)
 ![image](https://user-images.githubusercontent.com/82598726/174353469-68b96c1c-5801-460a-973e-2397957ce2af.png)
 
+
+
+<br><br><br>
 
 +We mostly work with url 'localhost:3000'
 ![image](https://user-images.githubusercontent.com/82598726/174353602-76ebdcb0-fede-486b-968a-f1a8d2367ea7.png)
