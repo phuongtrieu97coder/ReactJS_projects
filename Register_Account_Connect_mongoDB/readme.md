@@ -1,3 +1,6 @@
+
+
+
 # 1.Purpose:
 
 - This project is used to connect react with nodejs and mongoDB database to register user information, store data to database, and display it for users
@@ -10,13 +13,13 @@
 
 - Index.js is placed in “my-app/src/”
 > Link: <a type="button">[index.js](./src/index.js)</a>    
-[![Maintenance](https://img.shields.io/badge/JS-JavaScript-yellow.svg)(https://GitHub.com/Naereen/StrapDown.js/graphs/commit-activity)
+
+![image](https://img.shields.io/badge/JS-JavaScript-yellow)
 
 <br>
 
 - Userdata1_mongoDB.json is placed in “my-app/public/mongoDB_userdata/”   
 > Link:[Userdata1_mongoDB.json](./public/mongoDB_userdata/Userdata1_mongoDB.json)     
-[![Maintenance](https://img.shields.io/badge/JSON-mongoDB-green.svg)](https://GitHub.com/Naereen/StrapDown.js/graphs/commit-activity)
 
 
 <br>
