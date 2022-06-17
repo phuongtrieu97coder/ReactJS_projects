@@ -9,7 +9,9 @@
 # 3.Files and Folder url:
 
 - Index.js is placed in “my-app/src/”
-> Link: <a type="button">[https://img.shields.io/badge/js-index.js-yellow](./src/index.js)</a>
+> Link: <a type="button">[index.js](./src/index.js)</a>
+
+https://img.shields.io/badge/js-index.js-yellow
 
 
 <br>
