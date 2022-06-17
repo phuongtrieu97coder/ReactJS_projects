@@ -21,8 +21,13 @@
 <br>
 
 - Other files are placed in “my-app/public/”
+
+
 <br>
+
 - In “my-app/public/” folder I got “image” folder contains “company1.jpg,company2.jpg,company3.jpg”
+
+
 <br>
 
 
