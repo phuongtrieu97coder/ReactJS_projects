@@ -11,6 +11,8 @@
 - Index.js is placed in “my-app/src/”
 > Link: <a type="button">[index.js](./src/index.js)</a>
 
+[![Generic badge](https://img.shields.io/badge/JS-index.js-yellow.svg)](https://shields.io/)
+
 <br>
 
 - Userdata1_mongoDB.json is placed in “my-app/public/mongoDB_userdata/”   
