@@ -10,7 +10,9 @@
 
 - Index.js is placed in “my-app/src/”
 > Link: 
-![#c5f015](https://placehold.it/150/ffffff/ff0000?text=hello)
+```diff
++ index.js
+```
 <a type="button">[index.js](./src/index.js)</a>
 <br>
 
