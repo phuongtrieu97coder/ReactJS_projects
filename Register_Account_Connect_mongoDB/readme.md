@@ -9,12 +9,14 @@
 # 3.Files and Folder url:
 
 - Index.js is placed in “my-app/src/”
-> Link: <a type="button">[index.js](./src/index.js)</a>    [![Maintenance](https://img.shields.io/badge/JS-JavaScript-yellow.svg)](https://GitHub.com/Naereen/StrapDown.js/graphs/commit-activity)
+> Link: <a type="button">[index.js](./src/index.js)</a>    
+[![Maintenance](https://img.shields.io/badge/JS-JavaScript-yellow.svg)(https://GitHub.com/Naereen/StrapDown.js/graphs/commit-activity)
 
 <br>
 
 - Userdata1_mongoDB.json is placed in “my-app/public/mongoDB_userdata/”   
-> Link:[Userdata1_mongoDB.json](./public/mongoDB_userdata/Userdata1_mongoDB.json)     [![Maintenance](https://img.shields.io/badge/JSON-mongoDB-green.svg)](https://GitHub.com/Naereen/StrapDown.js/graphs/commit-activity)
+> Link:[Userdata1_mongoDB.json](./public/mongoDB_userdata/Userdata1_mongoDB.json)     
+[![Maintenance](https://img.shields.io/badge/JSON-mongoDB-green.svg)](https://GitHub.com/Naereen/StrapDown.js/graphs/commit-activity)
 
 
 <br>
