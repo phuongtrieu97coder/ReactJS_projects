@@ -1,19 +1,26 @@
-#Purpose:
+# Purpose:
 
 + This project is used to connect react with nodejs and mongoDB database to register user information, store data to database, and display it for users
 
+# Files is being used:
 
 +In this project, i work with 7 files: index.html, index2.html, index3.html, nodejs_test1.js, index.js, package.json, Userdata1_mongoDB.json
+
+# Files and Folder url:
 
 +Index.js is placed in “my-app/src/”
 +Userdata1_mongoDB.json is placed in “my-app/public/mongoDB_userdata/”
 +Other files are placed in “my-app/public/”
-
 +In “my-app/public/” folder I got “image” folder contains “company1.jpg,company2.jpg,company3.jpg”
 
 
-+ Programing languages: HTML, CSS, jQuery, Reactjs, nodejs, JavaScript Ajax+JSON, expressJS, npm bodyParser module
+# Programing languages
 
++HTML, CSS, jQuery, Reactjs, nodejs, JavaScript Ajax+JSON, expressJS, npm bodyParser module
+
+# Setup Proxy
+
+#### Purpose: ##### Connect Reactjs with NodeJS
 
 +Please write "proxy":"http://localhost:8080" inside "package.json" file to connect reactjs to nodejs at the same proxy
 
@@ -23,7 +30,10 @@
 
 <br><br><br>
 
-<p style="color:green;text-align:center;">
+
+# Proxy Server basic concepts
+
+<p align="center">
 
 <h1>In computer networking, a proxy server is a server application that acts as an intermediary between a client requesting a resource 
 and the server providing that resource.[1]</h1>
@@ -33,7 +43,7 @@ and the server providing that resource.[1]</h1>
 
 </p>
 
-<p style="color:green;text-align:center;">
+<p align="center">
 
 
 <h1>A proxy server is a bridge between you and the rest of the internet. Normally, when you use your browser to surf the internet,
@@ -46,6 +56,9 @@ and the server providing that resource.[1]</h1>
 </p>
 
 <br><br><br>
+
+
+# Running:
 
 + We must create 2 terminal to run both reactjs(cd my-app => npm start) and nodejs(cd my-app => cd-public => node nodejs_test1.js) 
 to work effectively with this program.
