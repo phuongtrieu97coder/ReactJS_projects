@@ -8,10 +8,14 @@
 
 # Files and Folder url:
 
-+Index.js is placed in “my-app/src/”   [src](./src/index.js)
++Index.js is placed in “my-app/src/”
+> Link: [src](./src/index.js)
 <br>
-+Userdata1_mongoDB.json is placed in “my-app/public/mongoDB_userdata/”    [Userdata1_mongoDB](./public/Userdata1_mongoDB.json)
+
++Userdata1_mongoDB.json is placed in “my-app/public/mongoDB_userdata/”   
+> Link: [Userdata1_mongoDB](./public/mongoDB_userdata/Userdata1_mongoDB.json)
 <br>
+
 +Other files are placed in “my-app/public/”
 <br>
 +In “my-app/public/” folder I got “image” folder contains “company1.jpg,company2.jpg,company3.jpg”
