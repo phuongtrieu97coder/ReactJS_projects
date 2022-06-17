@@ -8,10 +8,14 @@
 
 # Files and Folder url:
 
-+Index.js is placed in “my-app/src/”
-+Userdata1_mongoDB.json is placed in “my-app/public/mongoDB_userdata/”
++Index.js is placed in “my-app/src/”   [src](./src/index.js)
+<br>
++Userdata1_mongoDB.json is placed in “my-app/public/mongoDB_userdata/”    [Userdata1_mongoDB](./public/Userdata1_mongoDB.json)
+<br>
 +Other files are placed in “my-app/public/”
+<br>
 +In “my-app/public/” folder I got “image” folder contains “company1.jpg,company2.jpg,company3.jpg”
+<br>
 
 
 # Programing languages
@@ -20,7 +24,8 @@
 
 # Setup Proxy
 
-#### Purpose: ##### Connect Reactjs with NodeJS
+### --Purpose: 
+> Connect Reactjs with NodeJS
 
 +Please write "proxy":"http://localhost:8080" inside "package.json" file to connect reactjs to nodejs at the same proxy
 
@@ -35,22 +40,22 @@
 
 <p align="center">
 
-<h1>In computer networking, a proxy server is a server application that acts as an intermediary between a client requesting a resource 
-and the server providing that resource.[1]</h1>
+<h4>In computer networking, a proxy server is a server application that acts as an intermediary between a client requesting a resource 
+and the server providing that resource.[1]</h4>
 
-<h1>Instead of connecting directly to a server that can fulfill a request for a resource, such as a file or web page,
-  the client directs the request to the proxy server, which evaluates the request and performs the required network transactions</h1>
+<h4>Instead of connecting directly to a server that can fulfill a request for a resource, such as a file or web page,
+  the client directs the request to the proxy server, which evaluates the request and performs the required network transactions</h4>
 
 </p>
 
 <p align="center">
 
 
-<h1>A proxy server is a bridge between you and the rest of the internet. Normally, when you use your browser to surf the internet,
-  you connect directly to the website you’re visiting. Proxies communicate with websites on your behalf.</h1>
+<h4>A proxy server is a bridge between you and the rest of the internet. Normally, when you use your browser to surf the internet,
+  you connect directly to the website you’re visiting. Proxies communicate with websites on your behalf.</h4>
 
-<h1>When you use an online proxy, your browser first connects to the proxy, and the proxy forwards your traffic to the website you’re visiting. 
-  That’s why proxy servers are also known as “forward proxies.” An internet proxy will also receive the website’s response and send it back to you.</h1>
+<h4>When you use an online proxy, your browser first connects to the proxy, and the proxy forwards your traffic to the website you’re visiting. 
+  That’s why proxy servers are also known as “forward proxies.” An internet proxy will also receive the website’s response and send it back to you.</h4>
 
 
 </p>
