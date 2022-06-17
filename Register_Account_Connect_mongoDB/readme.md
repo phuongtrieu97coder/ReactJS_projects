@@ -1,4 +1,5 @@
-
+#  ![image](https://img.shields.io/badge/mongoDB-green)   ![image](https://img.shields.io/badge/JavaScript-yellow)  ![image](https://img.shields.io/badge/ReactJS-blue)
+![image](https://img.shields.io/badge/HTML-orange)  ![image](https://img.shields.io/badge/jQuery-blueviolet)  ![image](https://img.shields.io/badge/NodeJS-brightgreen)
 
 
 # 1.Purpose:
