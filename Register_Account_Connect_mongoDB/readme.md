@@ -1,7 +1,8 @@
 #  ![image](https://img.shields.io/badge/mongoDB-green)   ![image](https://img.shields.io/badge/JavaScript-yellow)  ![image](https://img.shields.io/badge/ReactJS-blue)
-![image](https://img.shields.io/badge/HTML-orange)  ![image](https://img.shields.io/badge/jQuery-blueviolet)  ![image](https://img.shields.io/badge/NodeJS-brightgreen)
+![image](https://img.shields.io/badge/HTML-orange?style=for-the-badge&logo=DiReact)  ![image](https://img.shields.io/badge/jQuery-blueviolet) 
+![image](https://img.shields.io/badge/NodeJS-brightgreen)
 
-
+SiAdblock
 # 1.Purpose:
 
 - This project is used to connect react with nodejs and mongoDB database to register user information, store data to database, and display it for users
