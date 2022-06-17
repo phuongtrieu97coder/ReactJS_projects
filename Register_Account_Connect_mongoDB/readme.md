@@ -10,7 +10,7 @@
 
 - Index.js is placed in “my-app/src/”
 > Link: 
-![#c5f015](https://via.placeholder.com/15/c5f015/000000?text=+) `#c5f015`
+![index.js](https://via.placeholder.com/15/c5f015/000000?text=+)
 <a type="button">[index.js](./src/index.js)</a>
 <br>
 
