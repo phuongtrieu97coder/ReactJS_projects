@@ -1,15 +1,15 @@
-# Purpose:
+# 1.Purpose:
 
 - This project is used to connect react with nodejs and mongoDB database to register user information, store data to database, and display it for users
 
-# Files is being used:
+# 2.Files is being used:
 
 - In this project, i work with 7 files: index.html, index2.html, index3.html, nodejs_test1.js, index.js, package.json, Userdata1_mongoDB.json
 
-# Files and Folder url:
+# 3.Files and Folder url:
 
 - Index.js is placed in “my-app/src/”
-> Link: [index.js](./src/index.js)
+> Link: <a type="button">[index.js](./src/index.js)</a>
 <br>
 
 - Userdata1_mongoDB.json is placed in “my-app/public/mongoDB_userdata/”   
@@ -22,14 +22,14 @@
 <br>
 
 
-# Programing languages
+# 4.Programing languages
 
 - HTML, CSS, jQuery, Reactjs, nodejs, JavaScript Ajax+JSON, expressJS, npm bodyParser module
 
-# 1. Setup Proxy
+# 5.Setup Proxy
 
-##   - Purpose: 
->      - Connect Reactjs with NodeJS
+##  Purpose: 
+>      Connect Reactjs with NodeJS
 
 - Please write "proxy":"http://localhost:8080" inside "package.json" file to connect reactjs to nodejs at the same proxy
 
