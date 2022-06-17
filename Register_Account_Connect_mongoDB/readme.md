@@ -9,7 +9,9 @@
 # 3.Files and Folder url:
 
 - Index.js is placed in “my-app/src/”
-> Link: <a type="button">[index.js](./src/index.js)</a>
+> Link: 
+![#c5f015](https://via.placeholder.com/15/c5f015/000000?text=+ [index.js](./src/index.js))
+<a type="button">[index.js](./src/index.js)</a>
 <br>
 
 - Userdata1_mongoDB.json is placed in “my-app/public/mongoDB_userdata/”   
