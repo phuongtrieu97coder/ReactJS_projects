@@ -11,13 +11,17 @@
 - Index.js is placed in “my-app/src/”
 > Link: 
 ```diff
-+ index.js
++ <a type="button">[index.js](./src/index.js)</a>
 ```
-<a type="button">[index.js](./src/index.js)</a>
+
 <br>
 
 - Userdata1_mongoDB.json is placed in “my-app/public/mongoDB_userdata/”   
-> Link: [Userdata1_mongoDB.json](./public/mongoDB_userdata/Userdata1_mongoDB.json)
+> Link:
+```diff
+@@ [Userdata1_mongoDB.json](./public/mongoDB_userdata/Userdata1_mongoDB.json)
+```
+
 <br>
 
 - Other files are placed in “my-app/public/”
@@ -49,13 +53,17 @@
 <p align="center">
 
 <h4>
+```diff
 - In computer networking, a proxy server is a server application that acts as an intermediary between a client requesting a resource 
 and the server providing that resource.
+```
 </h4>
 
 <h4>
-- Instead of connecting directly to a server that can fulfill a request for a resource, such as a file or web page,
+```diff
++ Instead of connecting directly to a server that can fulfill a request for a resource, such as a file or web page,
   the client directs the request to the proxy server, which evaluates the request and performs the required network transactions
+```
 </h4>
 
 </p>
@@ -64,13 +72,17 @@ and the server providing that resource.
 
 
 <h4>  
-- A proxy server is a bridge between you and the rest of the internet. Normally, when you use your browser to surf the internet,
+```diff
+! A proxy server is a bridge between you and the rest of the internet. Normally, when you use your browser to surf the internet,
   you connect directly to the website you’re visiting. Proxies communicate with websites on your behalf.
+```
 </h4>
 
 <h4>
-- When you use an online proxy, your browser first connects to the proxy, and the proxy forwards your traffic to the website you’re visiting. 
+```diff
+@@ When you use an online proxy, your browser first connects to the proxy, and the proxy forwards your traffic to the website you’re visiting. 
   That’s why proxy servers are also known as “forward proxies.” An internet proxy will also receive the website’s response and send it back to you.
+```
 </h4>
 
 
