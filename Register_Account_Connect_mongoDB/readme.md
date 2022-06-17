@@ -1,5 +1,5 @@
 #  ![image](https://img.shields.io/badge/mongoDB-green)   ![image](https://img.shields.io/badge/JavaScript-yellow)  ![image](https://img.shields.io/badge/ReactJS-blue)
-![image](https://img.shields.io/badge/HTML-orange?style=for-the-badge&logo=DiReact)  ![image](https://img.shields.io/badge/jQuery-blueviolet) 
+![image](https://img.shields.io/badge/HTML-orange?style=for-the-badge&logo=react)  ![image](https://img.shields.io/badge/jQuery-blueviolet) 
 ![image](https://img.shields.io/badge/NodeJS-brightgreen)
 
 SiAdblock
