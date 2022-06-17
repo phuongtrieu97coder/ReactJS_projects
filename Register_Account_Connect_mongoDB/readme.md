@@ -10,7 +10,7 @@
 
 - Index.js is placed in “my-app/src/”
 > Link: 
-![#c5f015](https://via.placeholder.com/15/c5f015/000000?text=+ [index.js](./src/index.js))
+![#c5f015](https://via.placeholder.com/15/c5f015/000000?text=+[index.js](./src/index.js))
 <a type="button">[index.js](./src/index.js)</a>
 <br>
 
@@ -42,7 +42,7 @@
 <br><br><br>
 
 
-# Proxy Server basic concepts:
+# 6.Proxy Server basic concepts:
 
 <p align="center">
 
@@ -77,7 +77,7 @@ and the server providing that resource.
 <br><br><br>
 
 
-# Running:
+# 7.Running:
 
 - We must create 2 terminal to run both reactjs(cd my-app => npm start) and nodejs(cd my-app => cd-public => node nodejs_test1.js) 
 to work effectively with this program.
