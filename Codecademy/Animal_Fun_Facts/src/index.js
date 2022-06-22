@@ -7,6 +7,6 @@ import {BrowserRouter,Routes,Route,Outlet,Link}
 from "react-router-dom";
 import {createRoot} from "react-dom/client";
 import ReactDOM from "react-dom";
-import "./test1.scss";
+import "./style1.scss";
 import PropTypes from "prop-types";
 import $ from "jquery";
