@@ -10,41 +10,41 @@ import ReactDOM from "react-dom";
 import "./style1.scss";
 import PropTypes from "prop-types";
 import $ from "jquery";
-
+import {animals} from "./test1.js";
+import ocean  from  "./image/ocean.jpg";
 
 
 const title = "Click an animal for a fun fact";
 
 const background = (
-  <img className="background" src={"/images/ocean.jpg"} alt="ocean" />
+  <img className="background" src={ocean} alt="ocean" />
 );
 
 let images = [animals["dolphin"], animals["lobster"], animals["starfish"]];
 
 let displayFact = (event) => {
-  document.getElementById("fact").innerHTML = event.target.alt;
+   $("#fact").html(event.target.alt).slideToggle(2000);
 };
 
 const animalFacts = (
-  <div>
-    <h1>{title}</h1>
-    {background}
-    <p id="fact"></p>
+  <div className="w3-center AnimalFactBlock">
+    <b id='title'>{title}</b>
+      
+     <div className="Animal_Fact_Block_Content_Display">
+        {background}
+            <p id="fact"></p>
 
-    <div className="animals">
-      {images.map((img, index) => {
-        return (
-          <img
-            key={index}
-            className="animal"
-            src={img.image}
-            alt={img.facts}
-            role="button"
-            onClick={displayFact}
-          />
-        );
-      })}
-    </div>
+            <div className="animals">
+            {images.map((img, index) => {
+                return (
+             
+                    <img key={index}  className="animal" src={img.image} alt={img.facts}
+                   role="button" onClick={displayFact}/>
+                                    
+                );
+            })}
+            </div>
+     </div>
   </div>
 );
 
