@@ -1,14 +1,14 @@
-import React from 'react';
+import React from "react";
+export function Button(props){
+   return (
+    <>
+          <button id='change_bg_color_butt1' name='change_bg_color_butt1' title='change_bg_color_button 1' 
+      type='button' className='btn btn-dark text-white w3-hover-green w3-hover-text-white'
+      onClick={props.refresh} style={{fontSize:"40px"}}
+       datachangebgcolorbutt='change_bg_color_button_data'>
+        <i className='fa fa-refresh fa-spin'></i> Change BG Color
+        </button>
 
-export class Button extends React.Component {
-	render() {
-		return (
-		<button onClick={this.props.onClick} 
-         className="w3-btn w3-ripple w3-black w3-text-white 
-         w3-hover-aqua w3-hover-text-white" style={{fontSize:"40px"}}
-         >
-				Refresh
-		</button>
-		);
-	}
+    </>
+   )
 }
