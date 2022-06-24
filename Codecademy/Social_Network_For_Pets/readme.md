@@ -21,3 +21,5 @@
 ![image](https://user-images.githubusercontent.com/82598726/175618532-b9e48683-9c68-428f-b2b3-a910ebadb5a9.png)
 
 
+## *Notice that if users click to any friends list in 'My Friends', the page will lead them to a specific friend profile*
+
