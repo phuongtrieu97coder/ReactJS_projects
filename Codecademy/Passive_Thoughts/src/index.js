@@ -19,7 +19,7 @@ function App() {
   ]);
 
   const addThought = (thought) => {
-      setThoughts(prev => [prev,...thought]);
+      setThoughts(prev => [thought,...prev]);
   };
   const removeThought = (thoughtIdToRemove) => {
     setThoughts(thoughts=>thoughts.filter(t=>t.id!==thoughtIdToRemove));
