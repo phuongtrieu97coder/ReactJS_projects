@@ -18,16 +18,22 @@ function App() {
     },
   ]);
 
+  const addThought = (thought) => {
+      setThoughts(prev => [prev,...thought]);
+  };
+  const removeThought = (thoughtIdToRemove) => {
+    setThoughts(thoughts=>thoughts.filter(t=>t.id!==thoughtIdToRemove));
+  }
   return (
     <div className="App">
       <header>
         <h1>Passing Thoughts</h1>
       </header>
       <main>
-        <AddThoughtForm />
+        <AddThoughtForm addThought={addThought}/>
         <ul className="thoughts">
           {thoughts.map((thought) => (
-            <Thought key={thought.id} thought={thought} />
+            <Thought key={thought.id} thought={thought} removeThought={removeThought}/>
           ))}
         </ul>
       </main>
@@ -36,3 +42,4 @@ function App() {
 }
 
 ReactDOM.render(<App />, document.getElementById('app'));
+
