@@ -16,6 +16,13 @@
 # Ouput from project of Codecademy
 ![image](https://user-images.githubusercontent.com/82598726/175789694-27e5f2ee-0d54-4011-a228-050e864c3666.png)
 
+<br>
+> The ideas are supporting users to input their thought and click 'add' button to display a new list of their thought with 'remove' button
+> If users click 'remove' button, a specific list of thought item will be removed
+> If users don't click 'remove' button, any thought item appears below the input field will be removed after 15 seconds
+
+<br>
+![image](https://user-images.githubusercontent.com/82598726/175791626-035c5f16-0406-43b6-ad7d-5afe62d94f82.png)
 
 <br><br>
 
