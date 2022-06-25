@@ -10,3 +10,14 @@
 <br><br>
 
 > What if you could post something and know it wouldn’t live forever? In this project, we’ll build a place for our passing thoughts. Once you add a short thought, it’ll disappear after just 15 seconds.
+
+
+
+# Ouput from project of Codecademy
+![image](https://user-images.githubusercontent.com/82598726/175789694-27e5f2ee-0d54-4011-a228-050e864c3666.png)
+
+
+<br><br>
+
+# Output from project that was written by me
+
