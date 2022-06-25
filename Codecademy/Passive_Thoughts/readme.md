@@ -22,6 +22,7 @@
 > If users don't click 'remove' button, any thought item appears below the input field will be removed after 15 seconds
 
 <br>
+
 ![image](https://user-images.githubusercontent.com/82598726/175791626-035c5f16-0406-43b6-ad7d-5afe62d94f82.png)
 
 <br><br>
