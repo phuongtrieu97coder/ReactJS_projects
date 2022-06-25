@@ -10,3 +10,11 @@
 <br>
 
 > For this project, you’ll make three React components work together to create a responsive video player. Let’s get started!
+
+<br><br>
+
+# Output of the project that was made by Codecademy team
+
+![image](https://user-images.githubusercontent.com/82598726/175792996-7c2f24a1-dcc0-4f21-853b-03be5e142320.png)
+
+# Output of the project that was written by me
