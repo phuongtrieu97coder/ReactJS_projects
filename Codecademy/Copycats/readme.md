@@ -22,3 +22,9 @@
 > If users click the cat image
 
 ![image](https://user-images.githubusercontent.com/82598726/176034765-a2e77caf-7699-467f-8027-17d12a47b180.png)
+
+> Notice that when the cat is open the mouth, then users can see the result value that they have written inside the input field. 
+
+> If the cat's mouth is taped, then users can't see any text value below the cat image
+
+> When finish writing project, developer should see the title text 'Copy Cat ' + a different name instead of 'Copy Cat Tom'. This name depends on the props 'name' that developer insert to <CopyCat/> component
