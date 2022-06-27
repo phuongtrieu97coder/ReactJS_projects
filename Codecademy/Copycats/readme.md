@@ -11,3 +11,14 @@
 > In this project, we’ll build a program that lets users type into a textbox and allows them to visualize the immediate effect that these changes have on the web page.
 
 > Our program will display a textbox with a picture of a cat beneath it. When users type into the textbox, a copy of the text will appear below the cat image, suggesting that the cat is being a copycat. Clicking on the image of the cat will toggle whether or not it is able to copy the user.
+
+
+![image](https://user-images.githubusercontent.com/82598726/176034612-31c3e323-f7cb-4a08-9860-cd957a226371.png)
+
+> If users input something
+
+![image](https://user-images.githubusercontent.com/82598726/176034703-2573375e-2881-4f66-8c90-57e4ee72412a.png)
+
+> If users click the cat image
+
+![image](https://user-images.githubusercontent.com/82598726/176034765-a2e77caf-7699-467f-8027-17d12a47b180.png)
