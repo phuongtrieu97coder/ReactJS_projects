@@ -4,12 +4,7 @@ import PropTypes from "prop-types";
 
 export class CopyCat extends React.Component {
   render() {
-    const copying = this.props.copying;
-    const toggleTape = this.props.toggleTape;
-    const copycat = this.props.copycat;
-    const quietcat = this.props.quietcat;
-    const input = this.props.input;
-    const handleChange = this.props.handleChange;
+  const {copying,toggleTape,copycat,quietcat,input,handleChange} = this.props;
 
     return (
       <div style={styles.divStyles}>
