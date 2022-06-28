@@ -72,3 +72,14 @@ export default function PersonalPizza() {
   );
 }
 ```
+
+
+# Output
+
+![image](https://user-images.githubusercontent.com/82598726/176244947-9d54d668-c309-4cc3-bfd5-6b84f68d1cfe.png)
+
+> If users click 'Add...' button, a new pizza is going to add into order list. Then, this button is going to change into 'Remove...' button, and if users click it, that pizza is going to be removed from the order list
+
+![image](https://user-images.githubusercontent.com/82598726/176245361-6f36fa82-3489-4407-93a3-c58d67c6d260.png)
+
+
