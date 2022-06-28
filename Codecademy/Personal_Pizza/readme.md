@@ -95,12 +95,12 @@ class PersonalPizza extends React.Component{
     return (
      <div>
       {options.map(option => (
-        <button value={option} onClick={toggleTopping} key={option}>
-          {selected.includes(option) ? "Remove " : "Add "}
+        <button value={option} onClick={this.toggleTopping} key={option}>
+          {this.state.selected.includes(option) ? "Remove " : "Add "}
           {option}
         </button>
       ))}
-      <p>Order a {selected.join(", ")} pizza</p>
+      <p>Order a {this.state.selected.join(", ")} pizza</p>
     </div>
     )
  
