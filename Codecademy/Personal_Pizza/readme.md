@@ -42,7 +42,7 @@ import React, { useState } from "react";
  
 const options = ["Bell Pepper", "Sausage", "Pepperoni", "Pineapple"];
  
-export default function PersonalPizza() {
+export function PersonalPizza() {
   const [selected, setSelected] = useState([]);
  
   const toggleTopping = ({target}) => {
