@@ -74,6 +74,41 @@ export default function PersonalPizza() {
 ```
 
 
+> Here is how you can write this project above using class component
+
+```javascript
+class PersonalPizza extends React.Component{
+  constructor(props){
+    super(props);
+    this.state = {selected:[]};
+    this.toggleTopping = this.toggleTopping.bind(this);
+  }
+  toggleTopping(e){
+        const clickedTopping = e.target.value;
+        if(this.state.selected.includes(clickedTopping)){
+          this.setState({selected:this.state.selected.filter(t=>t!=clickedTopping)});
+        }else{
+          this.setState({selected:[...this.state.selected,clickedTopping]})
+        }
+   }
+   render(){
+    return (
+     <div>
+      {options.map(option => (
+        <button value={option} onClick={toggleTopping} key={option}>
+          {selected.includes(option) ? "Remove " : "Add "}
+          {option}
+        </button>
+      ))}
+      <p>Order a {selected.join(", ")} pizza</p>
+    </div>
+    )
+ 
+   }
+}
+```
+
+
 # Output
 
 ![image](https://user-images.githubusercontent.com/82598726/176244947-9d54d668-c309-4cc3-bfd5-6b84f68d1cfe.png)
