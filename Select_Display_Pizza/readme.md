@@ -1,6 +1,6 @@
 # Select And Display Pizza Selection Option
 
-> In this document, I’m going to work with a small project that uses the ‘useContext’ and ‘map’ method to display pizza image when users select a specific pizza option
+> In this small project, I’m going to use the ‘useContext’ and ‘map’ method to display pizza image when users select a specific pizza option
 
 ![image](https://user-images.githubusercontent.com/82598726/176490266-6715a5d5-7850-4411-a6c0-6a6b2679bfeb.png)
 
