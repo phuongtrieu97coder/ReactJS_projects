@@ -2,6 +2,8 @@
 
 ![image](https://user-images.githubusercontent.com/82598726/181834601-bb3dd01b-65cf-4c5e-879e-cfc1c44688eb.png)
 
+# ReactJS Projects
+
 # 1. Purpose:
 
 - This repository contains all the projects that have been made using ReactJS that combine with other languages most of the time. 
